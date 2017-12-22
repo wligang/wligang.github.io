@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/christmas.css">
+	<title>Hido·圣诞帽头像生成器</title>
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+	<script>
+		var obj_share = {
+			'shareTitle':'圣诞帽头像生成器',
+			'shareDigest':'点击即可生成你的圣诞专属头像',
+			'shareImgUrl':'http://act.tangdaoya.com/tdy_h5/h5/christmas/2017/images/boy.png'
+		};
+		var _hmt = _hmt || [];
+	</script>
+</head>
+<body>
+
+
+<!-- Copyright � 2008. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+	<div class="swiper-container swiper-container-horizontal" id="swiper_container">
+		<!-- choose hat -->
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide swiper-slide-active" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_11.png"></div>
+	        <div class="swiper-slide swiper-slide-next" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_03.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_06.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_07.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_08.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_09.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_10.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_12.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_13.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_14.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_15.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_01.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_02.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_04.png"></div>
+	        <div class="swiper-slide" style="width: 193.333px; margin-right: 30px;"><img class="swiper-img" src="images/hat_05.png"></div>
+	    </div>
+	    <!-- Add Pagination -->
+	    <div class="swiper-pagination">
+	    	<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    	<span class="swiper-pagination-bullet"></span>
+	    </div>
+	</div>
+	<img src="images/share.png" id="share_img" class="share-img">
+	<div class="container fill">
+		<div id="firstpage" class="fp fill">
+			<img src="images/head.png" class="fp-title-img fp-img" alt="圣诞帽头像">
+			<div class="fp-img-content fp-img">
+				<img src="images/girl.png" id="droaemon" class="fp-img-model flip droaemon-img" alt="女主" style="width:100%">	
+				<img src="images/boy.png" id="dabai" class="fp-img-model flip dabai-img" alt="男主" style="width:100%">	
+			</div>
+			<img src="images/clickbegin.png" class="fp-click-img fp-img" alt="点击进入制作">
+			<label for="img_load" id="clickbegin" class="fp-click"><input class="fill none" type="file" id="img_load" name="image" accept="image/*"></label>
+		</div>
+		<div id="secondpage" class="sp fill">
+			<div class="sp-canvas-container">
+				<img class="sp-hat-img" src="index.html" id="hat_img" style="touch-action: auto; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+				<canvas class="sp-canvas" width="600" height="600" id="canvas"></canvas>
+				<div class="sp-guide-2 fill" id="guide_info_2">
+					<div class="guide-2-text">用两个手指捏放调整帽子大小和角度</div>
+					<img src="images/guide_2.png" class="guide-2-img">	
+				</div>
+			</div>
+			<img src="index.html" id="result_img" class="sp-result-img">	
+			<div id="rotate_btn" data-degree="90" class="sp-btn sp-red sp-half sp-rotate-img">旋转90度</div>
+			<div id="trim" data-istrim="1" class="sp-btn sp-red sp-half">微调器</div>
+			<div id="trim_box" class="sp-trim-box">
+				<span id="trim_big" class="sp-trim-ele sp-trim-btn">放大</span>
+				<div id="trim_container" class="sp-trim-ele sp-trim-rotate">
+					<span id="trim_slide" class="sp-trim-slide"></span>
+				</div>
+				<span id="trim_small" class="sp-trim-ele sp-trim-btn">缩小</span>	
+				<div id="trim_info" class="sp-trim-info">放大、缩小按钮调整帽子尺寸大小，拖动滑块调整旋转角度</div>	
+			</div>	
+			<label for="upload" id="upload_img" class="sp-btn sp-red sp-half">
+				<input class="none" type="file" id="upload" name="image" accept="image/*">上传图片
+			</label>
+			<div id="creat_btn" class="sp-btn sp-green sp-full sp-creat-img">生成萌萌哒图片</div>
+			<div style="width: 60%;display:inline-block;vertical-align: bottom;">
+				<div id="reload" class="sp-btn sp-green sp-full none" style="margin-left:5%">再做一顶</div>
+				<div id="tishi" class="sp-btn sp-full sp-red none" style="letter-spacing:0px;margin-left:5%">长按图片3秒保存到本地</div>
+			</div>
+			<div style="display: inline-block;width: 36%;text-align: center;">
+			    <img class="none" id="erweima" src="images/qrcode.jpg" style="display: inline-block;width: 70%;">
+			    <span class="none ershuo" id="ershuo" style="display: inline-block;color: #fff;font-size: 14px;">识别二维码，生成我的圣诞帽</span>
+			</div>
+		</div>
+	</div>
+<script src="js/require.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	require.config({
+		'baseUrl': '../', 
+		'packages':[
+			{
+				'name': 'jquery',
+				'location': 'h/js',
+				'main': 'jquery.min'
+			},
+			{
+				'name': 'hammer',
+				'location': 'h/js',
+				'main': 'hammer.min'
+			},
+			{
+				'name': 'swiperjquery',
+				'location': 'h/js',
+				'main': 'swiper.jquery.min'
+			}
+		]
+	});
+</script>
+<script>
+	require(['h/js/christmas'], function (christmas){
+		christmas.enter();
+	});
+</script>
+</body>
+</html>

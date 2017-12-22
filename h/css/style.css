@@ -1,0 +1,98 @@
+/* RESET START */
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+* {
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0; }
+
+/* HTML5 tags not defined in IE 6/7/8/9 and Firefox 3 */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+/***/
+html {
+  background: #fff;
+  color: #000;
+  line-height: 1; }
+
+/* Grouping content & Text-level semantics */
+ul, ol {
+  list-style-type: none; }
+
+img {
+  display: block; }
+
+q:before, q:after {
+  content: none; }
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0; }
+
+/* Tabular data */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left; }
+
+td, th {
+  vertical-align: top; }
+
+/* UI controls */
+button, [type="button"], [type="reset"], [type="submit"] {
+  cursor: pointer; }
+
+button, [type="button"], [type="reset"], [type="submit"], label, [type="text"], textarea, select {
+  display: block;
+  width: 100%; }
+
+textarea {
+  overflow: auto; }
+
+:focus {
+  outline: 0; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* Input placeholders */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 1; }
+::-moz-placeholder {
+  color: inherit;
+  opacity: 1; }
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1; }
+::placeholder {
+  color: inherit;
+  opacity: 1; }
+
+/* RESET END */
+.headline {
+  background: #ddd;
+  padding: 10px; }
+
+.tag {
+  color: red; }
+
+body :not(.headline):hover {
+  outline: 1px dotted red; }

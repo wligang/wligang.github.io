@@ -1,0 +1,371 @@
+body{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+body :not(.headline):hover{
+  outline: none;
+}
+img{
+  display: inline-block;
+}
+.none{
+  visibility: hidden;
+}
+.fill{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+}
+/*第一页样式*/
+.fp-img{
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.fp-title-img{
+  width: 62%;
+  margin-top: 3%;
+}
+.fp-img-content{
+  width: 56%;
+  text-align: center;
+  margin-top: 7%;
+  height: 51%;
+  position: relative;
+}
+.fp-img-model{
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+.droaemon-img{
+  width: 92%;
+}
+.flip-img{
+  bottom: 0;
+  display: inline-block;
+}
+.fp-click-img{
+  width: 85%;
+  margin-top: -77px;
+}
+.fp-click{
+  width: 85%;
+  height: 14%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 67%;
+}
+.fp-foot-img{
+  width: 59.4%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+/*第一页：翻转动画样式*/
+.in {
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 350ms;
+  animation-timing-function: ease-out;
+  animation-duration: 350ms;
+}
+.out {
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 225ms;
+  animation-timing-function: ease-in;
+  animation-duration: 225ms;
+}
+.flip {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0); 
+  backface-visibility: hidden;
+  transform: translateX(0);
+}
+.droaemon-img, .santaclaus-img{
+  transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
+}
+.flip.out {
+  -webkit-transform: rotateY(-90deg) scale(.9);
+  -webkit-animation-name: flipouttoleft;
+  -webkit-animation-duration: 250ms;
+  transform: rotateY(-91deg) scale(.9);
+  animation-name: flipouttoleft;
+  animation-duration: 250ms;
+}
+.flip.in {
+  -webkit-animation-name: flipintoright;
+  -webkit-animation-duration: 325ms;
+  animation-name: flipintoright;
+  animation-duration: 325ms;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);  
+}
+@-webkit-keyframes flipouttoleft {
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(-90deg) scale(.9); }
+}
+@keyframes flipouttoleft {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(-90deg) scale(.9); }
+}
+
+@-webkit-keyframes flipintoright {
+    from { -webkit-transform: rotateY(90deg) scale(.9); }
+    to { -webkit-transform: rotateY(0); }
+}
+@keyframes flipintoright {
+    from { transform: rotateY(90deg) scale(.9); }
+    to { transform: rotateY(0); }
+}
+/*第二页样式*/
+.swiper-container {
+  width: 100%;
+  height: 22%;
+  position: absolute;
+  visibility: hidden;
+}
+.swiper-wrapper{
+  margin-top: 7%;
+  height: 58.5%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  animation-name: swipersmall;
+  animation-duration: 325ms;
+  -webkit-animation-name: swipersmall;
+  -webkit-animation-duration: 325ms;
+}
+/*滑块放大缩小动画*/
+.swiper-slide-next{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  animation-name: swiperscale;
+  animation-duration: 325ms;
+  -webkit-animation-duration: 325ms;
+  -webkit-animation-name: swiperscale;
+}
+/*将滑块变小*/
+.swiper-small{
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  animation-name: swipersmall;
+  animation-duration: 325ms;
+  -webkit-animation-name: swipersmall;
+  -webkit-animation-duration: 325ms;
+}
+/*将滑块变大*/
+.swiper-big{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  animation-name: swiperscale;
+  animation-duration: 325ms;
+  -webkit-animation-duration: 325ms;
+  -webkit-animation-name: swiperscale;
+}
+/*滑块放大动画*/
+@keyframes swiperscale{
+  from {transform: scale(1);}
+  to {transform: scale(1.2);}
+}
+@-webkit-keyframes swiperscale{
+  from {-webkit-transform: scale(1);}
+  to {-webkit-transform: scale(1.2);}
+}
+/*滑块变小动画*/
+@keyframes swipersmall{
+  from {transform: scale(1.2);}
+  to {transform: scale(0.9);}
+}
+@-webkit-keyframes swipersmall{
+  from {-webkit-transform: scale(1.2);}
+  to {-webkit-transform: scale(0.9);}
+}
+.swiper-pagination{
+  visibility: hidden;
+}
+.swiper-img{
+  width: 123px;
+}
+.sp{
+  display: none;
+}
+.sp-canvas-container{
+  margin-top: 34%;
+  height: 57%;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.sp-canvas{
+  display: block;
+  margin: 0 auto;
+}
+.sp-btn{
+  color: #fff;
+  border-radius: 10px;
+  height: 68px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 68px;
+  margin-top: 26px;
+  display: inline-block;
+  letter-spacing: 8px;
+  margin-left: 3%;
+  margin-right: 2.5%;
+}
+.sp-red{
+  background-color: #c80907;
+}
+.sp-green{
+  background-color: #048f4e;
+}
+.sp-half{
+  width: 43.6%;
+}
+.sp-full{
+  display: block;
+}
+#upload{
+  width: 0;
+}
+#hat_img{
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+.sp-result-img{
+  display: none; 
+  margin: 0 3%;
+  margin-top: 34%;
+}
+/*手指滑动提示信息样式*/
+.sp-guide-2{
+  position: absolute;
+  top: 20px;
+  overflow: hidden;
+  display: none;
+}
+.guide-2-text{
+  color: #fff;
+  font-size: 29px;
+  background-color: #8c2c37;
+  width: 94%;
+  padding: 20px;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0.8;
+}
+.guide-2-img{
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px;
+  opacity: 0.8;
+}
+.share-img{
+  display: none;
+  position: absolute;    
+  z-index: 3;
+  width: 94%;
+  margin-left: 3%;
+}
+/*微调器*/
+#trim{
+  display: none;
+}
+.sp-trim-box{
+  width: 94%;
+  top: 49%;
+  left: 3%;
+  position: absolute;
+  height: 100px;
+  color: #fff;
+  font-size: 33px;
+  line-height: 100px;
+  text-align: center;
+  background-color: rgba(134,131,131,0.5);
+  display: none;
+}
+.sp-trim-ele{
+  display: inline-block;
+}
+.sp-trim-btn{
+  border-radius: 50%;
+  background: #c80907;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  line-height: 80px;
+  font-size: 27px;
+}
+.sp-trim-rotate{
+  width: 400px;
+  background: #c80907;
+  height: 14px;
+  vertical-align: middle;
+  position: relative;
+}
+.sp-trim-slide{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -13px;
+  background-color: #fff;
+}
+.sp-trim-info{
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: 78px;
+  font-size: 22px;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
