@@ -12,11 +12,6 @@
 	<title>Hido·圣诞帽头像生成器</title>
 	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
 	<script>
-		var obj_share = {
-			'shareTitle':'圣诞帽头像生成器',
-			'shareDigest':'点击即可生成你的圣诞专属头像',
-			'shareImgUrl':'http://act.tangdaoya.com/tdy_h5/h5/christmas/2017/images/boy.png'
-		};
 		var _hmt = _hmt || [];
 	</script>
 </head>
@@ -140,21 +135,22 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 		christmas.enter();
 	});
 	
-		$.ajax({
-			url:"http://www.wlgdo.com/apt37/act/loadtime.do",
-			data:{actid:'100'},
-			type:"POST",
-			dataType:"json",
-			success:function(data){
-				console.log('成功参与一次');
-			},
-			error:function(data){
-				console.log(data);
-			},
-			complete:function(xml){
-				console.log(xml);
-			}
-		});  	
+	$.ajax({
+		url:"http://www.wlgdo.com/hido/act/loadtime.do",
+		data:{actid:'100'},
+		type:"POST",
+		dataType:"json",
+		success:function(data){
+			console.log('成功参与一次');
+		},
+		error:function(data){
+			console.log(data);
+		},
+		complete:function(xml){
+			console.log(xml);
+		}
+	}); 
+	
 </script>
 </body>
 </html>
