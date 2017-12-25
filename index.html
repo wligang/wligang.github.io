@@ -569,9 +569,8 @@
 	<div class="footer">
 		<div class="container">
 			<p>
-				  
 				<a href="http://www.wlgdo.com/" target="_blank"
-					title="Hi do">Hi do</a> - Collect from <a
+					title="Hi do">H!do</a> - Collect from <a
 					href="http://www.wlgdo.com/" title="肥肥@晗" target="_blank">weixin:799949865 Or mail:wlgchun@163.com</a>
 			</p>
 		</div>
@@ -596,7 +595,7 @@
 		
 		$(function(){
 			$(".glyphicon-th-large").parent(".services-left").bind("click",function(){
-				window.open("/apt37/mob/index.do");     
+				window.open("/hido/mob/index.do");     
 			});
 			
 			if(localStorage && localStorage.getItem("suggest")){
@@ -604,10 +603,10 @@
 			}
 			
 			$(".page-culture").bind("click",function(){
-				window.open("/apt37/mob/forward.do?id=culture&flat=false"); 
+				window.open("/hido/essay/open"); 
 			})
 			$(".glyphicon-cog").parent().on("click",function(){
-				window.open("yyy/index.htm"); 
+				window.open("/hido/yyy/index.htm"); 
 			})
 			
 		});
@@ -616,7 +615,7 @@
 				return false
 			}
 			$.ajax({
-				url:"/apt37/act/suggest.do",
+				url:"/hido/act/suggest.do",
 				data:{suggest:$("input[name='suggest']").val()},
 				type:"POST",
 				dataType:"json",
