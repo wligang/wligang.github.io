@@ -1,4 +1,4 @@
-##37°公寓6号楼主页
+##个人网站
 
 You can use the [editor on GitHub](https://github.com/wligang/wligang.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
